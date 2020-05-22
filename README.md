@@ -10,7 +10,7 @@ This is the official implementation of [3VAN:A Parallel System for Single-view 3
 ### Overall Pipeline
 
 <div align="center">
- <img src="./pic/framework.png">
+ <img src="pic/framework.png">
  <p><font size="2">It decomposes the 2D-to-3D reconstruction task into two branches.
 (a)3D-VAE: This branch extends the standard VAE for adapting to 3D reconstruction tasks. It reconstructs rough 3D object shape conditioned on a single image which is sampled from an arbitrary view, yielding an uncompleted volumetric occupancy. 
 (b)Attention Network: By inputting the same single view image, it makes up the defects in uncompleted volumetric occupancy and reconstructing detailed voxel occupancy to integrate the 3D shape. 
@@ -20,7 +20,7 @@ This is the official implementation of [3VAN:A Parallel System for Single-view 3
 
 ### Results on the ShapeNet Dataset
 
-<p align="center"> <img src="./pic/result.png" width="90%"></p>
+<p align="center"> <img src="pic/result.png" width="90%"></p>
 
 ### Requirements
 All the codes are tested in the following environment:
@@ -33,7 +33,7 @@ All the codes are tested in the following environment:
 
 IoU scores on the ShapeNet dataset are listed below.
 
-<p align="center"> <img src="./pic/iou_score.png" width="90%"></p>
+<p align="center"> <img src="pic/iou_score.png" width="90%"></p>
 
 ### Installation
 
@@ -50,7 +50,7 @@ source activate 3van
 pip install -r requirements.txt
 ```
 
-Download and install tensorflow-1.4.0 [here](https://drive.google.com/file/d/142fwmiq8skVUcEqxXny9zA4bNG7YULGn/view?usp=sharing) which is compiled with CUDA-9.0 and CuDNN-7.0.0.
+Download and install tensorflow-1.4.0 which is compiled with CUDA-9.0 and CuDNN-7.0.0.
 ```
 pip install tensorflow-gpu==1.10
 ```
